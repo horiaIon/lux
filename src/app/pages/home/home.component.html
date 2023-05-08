@@ -20,13 +20,15 @@
             class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
             <a
               class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+              (click)="settings.theme.showMenu = true"
               target="_blank"
               href="https://drive.google.com/file/d/14xqLrdUEqDMZXhMlNkta87Q--FuuYskE/view?usp=sharing">
               Resume
             </a>
             <a
               class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
-              href="projects.html">
+              (click)="settings.theme.showMenu = true"
+              [routerLink]="['/projects']">
               Projects
             </a>
           </div>
@@ -38,7 +40,7 @@
           <div class="profile bg-gradient-primary-to-secondary">
             <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
             <!-- Watch a tutorial on how to do this on YouTube (link)-->
-            <img class="profile-img" src="assets/img/profile.png" alt="..." />
+            <img class="profile-img" src="assets/img/profile-1.png" alt="..." />
             <div class="dots-1">
               <!-- SVG Dots-->
               <svg
@@ -98,7 +100,6 @@
             <div class="dots-2">
               <!-- SVG Dots-->
               <svg
-                version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px"
@@ -271,7 +272,7 @@
   </div>
 </header>
 <!-- About Section-->
-<section class="bg-light py-5">
+<section class="bg-light py-lg-5 py-md-3">
   <div class="container px-5">
     <div class="row gx-5 justify-content-center">
       <div class="col-xxl-8">
@@ -296,6 +297,26 @@
               <i class="bi bi-linkedin"></i>
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact-->
+<section class="bg-white py-lg-5 py-md-3" id="contact">
+  <div class="container px-5">
+    <div class="row gx-5 justify-content-center">
+      <div class="col-xxl-8">
+        <div class="text-center my-5">
+          <h2 class="display-5 fw-bolder">
+            <span class="text-gradient d-inline">Contact</span>
+          </h2>
+          <p class="text-muted">
+            You can contact me via mail at
+            <b>lauraparghel@gmail.com</b>
+            , my inbox is open for projects. Hope to hear from you soon, have a
+            great day, and stay awesome!
+          </p>
         </div>
       </div>
     </div>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AppSettings } from './app.settings';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'laura-profile';
+  constructor(public appSettings: AppSettings, public title: Title) {
+    this.title.setTitle(this.appSettings.settings.title);
+  }
 }
