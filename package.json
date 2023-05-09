@@ -9,7 +9,7 @@
     "test": "ng test",
     "clean": "rm -rf dist",
     "build-prod": "npm run clean && ng build --aot --build-optimizer --optimization --extract-licenses --output-hashing=all",
-    "build-gh": "ng build --output-path docs --base-href /lux/",
+    "build-gh": "rm -rf docs && ng build --output-path docs --base-href /lux/",
     "lint": "ng lint",
     "lint-fix": "ng lint --fix",
     "prettify": "prettier --write  \"src/**/*.{ts,js,json,css,scss,md,html}\"",

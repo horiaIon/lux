@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Import Variables
+@import 'variables';
+
+// Import Bootstrap
+@import 'bootstrap';
+
+// Import Global Theme Styles
+@import 'global';
+@import 'utilities';
+
+// Import Custom Component Styles
+@import 'components/feature';
+@import 'components/profile';
