@@ -2,7 +2,6 @@
 
 # Compiled output
 /dist
-/docs
 /tmp
 /out-tsc
 /bazel-out
@@ -41,3 +40,18 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+#### let only /docs folder to deploy to github
+/src
+/.vscode
+/.editorconfig
+/.eslintrc.json
+/.prettierignore
+/.prettierrc.json
+/angular.json
+/package-lock.json
+/package.json
+/tsconfig.app.json
+/tsconfig.json
+/tsconfig.spec.json
