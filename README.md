@@ -7,9 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - run build-gh => will build changes into /docs folder, docs folder is used by github-pages for deploying
 - commit & push changes to main
 - git checkout gh-pages
-- git merge main
+- git pull --rebase origin main
 - make a copy of docs/index.html and name it docs/404.html
-- git push lux gh-pages
+- git commit & push lux gh-pages
 
 ## Development server
 
