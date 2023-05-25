@@ -4,10 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Deploy [github pages](https://angular.io/guide/deployment#deploy-to-github-pages)
 - make changes into main branch
-- run build-gh => will build changes into /docs folder, docs folder is used by github-pages for deploying
 - commit & push changes to main
+- run build-gh => will build changes into /docs folder, docs folder is used by github-pages for deploying
+- commit & push changes to main (one commit only with changes for ./docs folder to be able to cherry-pick it)
 - git checkout gh-pages
-- git pull --rebase origin main
+- git pull --rebase origin main (or cherry-pick only the changes for ./docs folder)
 - make a copy of docs/index.html and name it docs/404.html
 - git commit & push lux gh-pages
 
