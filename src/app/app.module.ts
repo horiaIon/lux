@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { CoreModule } from './core/core.module';
 import { FooterComponent } from './shared/footer/footer.component';
+import { BazaartComponent } from './pages/bazaart/bazaart.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     FooterComponent,
     HomeComponent,
     ProjectsComponent,
+    BazaartComponent,
   ],
   imports: [
     BrowserModule,
